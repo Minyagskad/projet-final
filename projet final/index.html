@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"> <!-- Ce méta-tag permet d'assurer que la page s'affiche correctement sur tous les appareils,
+notamment les téléphones mobiles, en adaptant la largeur du contenu à la taille de l'écran. UTF-8 pour les accents, les caractères spéciaux, etc. -->
+
+			<link rel="stylesheet" href="assets/css/style.css">
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/canvasjs.min.js"></script>
+			<title>Projet Final</title>
+			<link rel="icon" href="assets/img/avatar.png" type="image/icon type">
+		</head>
+        <body>
+        	<div id="page" style=width:100vw>
+        		<div id="logo" style=background-color:#8b1952 style=width:100vw ><center><img src="assets/img/logo.jpg" alt="logoSBN" width="60%" height="300%"></center></div><!-- alt sert à afficher la description de l'image, si jamlis cette dernière n'est pas visualisée correctement par le navigateur -->
+                <div class="entete">
+                    <div id="contentLiu" >
+                        <h1>LIU Zhenyang</h1>
+                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 2rem;">Numéro d'étudiant : 22307874</p>
+                        <h2>Sciences du langage, Inalco</h2> <!-- exemple de commentaire = heading=en-tête, de type 2  -->
+                        <img src="assets/img/Lzy.jpg" alt="photo_profil" width="60%" height="40%">
+                    </div>
+                    
+                    <div id="contentWXY" >
+                        <center><h3>WANG Xiangyu</h3></center>
+                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 2rem;">Numéro d'étudiant : 22407019</p>
+                        <center><h4>UFR LLD, Département ILPGA Sorbonne Nouvelle Paris 3</h4></center>
+                        <img src="assets/img/青雀.jpg" alt="photo_profil" width="60%" height="40%">
+                    </div>
+                </div>
+                    
+                <br><br><br><br><br><br>
+                <center><button id="button_aboutme" style="font-family: 'Times New Roman', Times, serif" class="fade" onclick="showHide_aboutme()" >Plus d'infomations sur nos CV </button></center> <!-- crée une fonction qui affiche/cache l'aide, centrée.. -->
+                 <br><br>
+                <div id="aboutme" style="xxx;">
+                	<p id="cv1" style=color:aliceblue>
+                		<center><b>CV des trois dernières années de LIU Zhenyang :</b>
+                			<table>
+                				<thead>
+                					<tr><th>Années</th><th>Parcours</th></tr>
+                                </thead>
+                                <tbody>
+                    <tr><td>2024-2025</td><td>Master 2, Inalco</td></tr>
+                    <tr><td>2023-2024</td><td>Master 1, Inalco</td></tr>
+                    <tr><td>2022-2023</td><td>Licence 3, Sorbonne université</td></tr>
+                                </tbody>
+                            </table></center>
+                    </p>
+                    <br>
+                    <p id="lectures1">
+                    	<p><b>Liste de mes dernières lectures :</b></p>
+                    		<ol>
+                    			<li><i>La Possibilité d'une île</i>, Michel Houellebecq, édition Fayard</li>
+                                <li><i>Les Démons de Léonora</i>, Francesca Melandri, édition Gallimard</>
+                                <li><i>L'Incolore Tsukuru Tazaki et ses années de pèlerinage</i>, Haruki Murakami (traduit en français), édition Belfond</li>
+                                <li><i>Des anges mineurs</i>, Antoine Volodine, édition Seuil</li>
+                                <li><i>La Petite Communiste qui ne souriait jamais</i>, Lola Lafon, édition Actes Sud</li>
+                                
+                            </ol>
+                        </p>
+                        <p id="cv2" style=color:aliceblue>
+                            <center><b>CV des trois dernières années de WANG Xiangyu :</b>
+                                <table>
+                                    <thead>
+                                        <tr><th>Années</th><th>Parcours</th></tr>
+                                    </thead>
+                                    <tbody>
+                        <tr><td>2024-2025</td><td>Master 1, Sorbonne Nouvelle Paris 3</td></tr>
+                        <tr><td>2023-2024</td><td>Licecnce 4, Université de Technologie de Wuhan</td></tr>
+                        <tr><td>2022-2023</td><td>Licence 3, Université de Technologie de Wuhan</td></tr>
+                                    </tbody>
+                                </table></center>
+                        </p>
+                        <br><br>
+                        <p id="lectures2">
+                            <p><b>Liste de mes dernières lectures :</b></p>
+                                <ol>
+                                    <li><i>Principles of Linguistic Change, Volume III </i>, William Labov, 2010</li>
+                                    <li><i>Principles of Linguistic Change, Volume II</i>, William Labov, 2010</li>
+                                    <li><i>Émoticônes et modalisation dans un corpus d’enseignement par t’chat. </i>, Halté, P, 2016</li>
+                                    <li><i>Les marques modales dans les chats.</i>, Halté, P, 2013</li>
+                                    <li><i>Functions of the Nonverbal in CMC: Emoticons and Illocutionary Force. Communication Theory</i>, Dresner, E., & Herring, S.C. , 2010</li>
+                                    
+                                </ol>
+                            </p>
+                        <p id="datetime">
+                            <button class="fade" style="font-family: 'Times New Roman', Times, serif;" onclick="date_heure()" id="btn1">Cliquez pour afficher la date et l'heure</button>
+						    <button class="fade" onclick="maj()" id="btn2" style="display:none">Cliquez pour afficher en majuscules</button> <!-- facultatif -->
+                            <p id="date-heure"></p>
+                        </p>
+                </div>
+                <br>
+                <!-- Analyse des données dans un fichier -->
+                <div id="container" style="width: 100vw; float: left;"> 
+                    <h5 style="text-align:center;">Analyse des données dans un fichier</h5>
+                    <div id="page-wrapper">
+                <div>
+                    <center><button style="font-family: 'Times New Roman', Times, serif;" id="button_aide" class="fade" onclick="showHide_aide()">Afficher l'aide</button></center>
+
+					<div id="aide" style="display:none;">
+                        <p><i>Voici un mode d'emploi :</i>
+                            <ul>
+                                <li>Etape 1 : Chargez un texte au format .txt à l'aide du bouton Parcourir.</li>
+                                <li>Etape 2 (facultatif) : Précisez les délimiteurs de votre choix puis cliquez sur le bouton Segmentation.</li>
+                                <li>Le bouton Dictionnaire : permet d'obtenir un tableau qui classe les tokens de façon décroissante en fonction du nombre d'occurences.</li>
+                                <li>Le bouton GREP : Entrez un pôle (une regex ou un mot) puis cliquez sur GREP pour obtenir le tableau des lignes d'occurences.</li>
+                                <li>Le bouton Concordancier : Entrez un pôle (une regex ou un mot) et une longueur de contexte puis cliquez sur Concordancier pour obtenir un tableau avec le contexte gauche et droit du pôle recherché.</li>
+                                <li>Le bouton Nombre de phrases : cliquez et il affichera le nombre de phrases.</li>
+                                <li>Le bouton Mots les plus longs : cliquez et il affichera les 10 mots les plus longs du texte.</li>
+                                <li>Le bouton Pie Chart : Saisissez des stopwords et cliquez sur le bouton pour afficher un graphique des 30 mots les plus fréquents dans le texte hors stopwords.</li>
+                                <li>Le bouton /kujuj/ : ajoute uj comme suffixe à chaque mot du texte chargé...</li>
+                            </ul>
+                        </p>
+						
+                    </div>
+					
+                </div>
+                </br>
+                <div>
+                    <span>
+                        <label style="font-family: 'Times New Roman', Times, serif;" for="fileInput" class="btn"><small>Sélectionner un fichier au format .txt :</small></label>
+                        <input id="fileInput" type="file" accept="text/plain" name="Fichier (.txt)" />
+                    </span>
+                </div>
+                <br />
+                <p style="text-align:center;">
+                    <small>
+                        <label style="font-family: 'Times New Roman', Times, serif;" for="delimID" class="mylabel">Délimiteur(s)</label>
+                        &nbsp; <!-- &nbsp; représente un espace insécable en HTML. Il empêche que deux éléments séparés par cet espace soient affichés sur deux lignes différentes. Cela permet une mise en forme plus stable. -->
+                        <input type="text" value=" ,;’'~|&#@=`%*$()[]{}_:+«»§\/" name="delim" id="delimID" size="40" />
+                    </small>
+                    <br />
+                    <small>
+                        <label style="font-family: 'Times New Roman', Times, serif;" for="poleID" class="mylabel">Pôle</label>
+                        &nbsp;
+                        <input type="text" placeholder="entrez un pôle..." name="pole" id="poleID" size="20" />
+                    </small>
+                    &nbsp;
+                    <small>
+                        <label style="font-family: 'Times New Roman', Times, serif;" type="lgID" class="mylabel">Longueur</label>
+                        &nbsp;
+                        <input type="text" value="10" name="lg" id="lgID" size="10" />
+                    </small>
+                    <br/>
+                    <small>
+                        <label style="font-family: 'Times New Roman', Times, serif;" for="stopwordID" class="mylabel">mots grammaticaux, Stopwords en anglais)</label>
+                        &nbsp;
+                        <input type="text" value="de,le,la,les,à,et,des,un,une,du,que,en,l,que,qu,d,s,se,ne,n,ce,me,sa" name="stopwords" id="stopwordID" size="60" />
+                    </small>
+                    <br />
+                    <br />
+                    <button class="special" onclick="alert('Voici un site qui permet d\'analyser des textes.');"><span>Bonjour</span></button> 
+					<!-- Ce bouton déclenche une alerte JavaScript lorsqu'on clique dessus, affichant un message de bienvenue. Il sert ici d'exemple interactif simple. -->
+                    <br />
+                    <br />
+                    <button style="font-family: 'Times New Roman', Times, serif;" onclick="segText()"><span>Segmentation</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="purple" id="btnDict" onclick="dictionnaire()"><span>Dictionnaire</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fade" id="btnGrep" onclick="grep()"><span>GREP</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fade" onclick="concord()"><span>XXXX</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fade" onclick="kujuj()"><span>/kujuj/</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fade" onclick="nbPhrases()"><span>Nombre de phrases</span></button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fade" onclick="tokenLong()">Mots les plus longs</button>
+                    <button style="font-family: 'Times New Roman', Times, serif;" class="fad" onclick="pieChart()"><span>grapheCamembert-Pie Chart</span></button>
+                </p>
+            </div>
+            <center>
+            <div id="logger1" style="width:100%"></div>
+            <div id="logger2" style="width:100%"></div>
+            <div id="logger3" style="width:100%"></div>
+            </center>
+            <br/>
+            <div id="Global">
+                <div id="fileDisplayArea"></div>
+                <div id="page-analysis"></div>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
+                <!-- FIN Analyse des données dans un fichier -->
+                <footer>
+                <br><br>
+                	<a href="htp://www.univ-paris3.fr/" class="rainbowBtn">xx</a>
+                <br>
+                </footer>
+        </body>
+    </html>

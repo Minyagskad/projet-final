@@ -1,0 +1,289 @@
+html { /* pour cette partie, commentez et personnalisez au moins 12lignes. exemple ligne2 : font-size: 16px; font-size signifie "taille des caractères". px signifie .. et diffère de rem pour x raisons. */
+	font-size: 14px;/* px=pixel, unité absolue, contrairement à des unités comme 'em' ou 'vw', la taille ne change pas selon l’écran ou le zoom. */
+	width: 100vw;/* vw=viewpoint width, unité relative à la largeur de la fenêtre, contrairement à 'cm' qui est fixe, 'vw' s’adapte aux écrans responsifs. */
+	font-family: "Lucida Console", "Courier New", monospace;/*définit la police */
+	background-color:#f6eff3;
+}
+.contentLiu{
+    background-color: #f6eff3;
+}
+h1 {/* h1 est le titre principal de la page. C’est le niveau hiérarchique le plus élevé pour les titres HTML (niveau 1). Sa taille est définie en rem, qui aide à le rendre visible.*/
+	font-size: 4.5rem; /* rem=root em, une unité de mesure qui représente la taille de police de l'élément racine. 4.5rem serait 4.5 fois la taille de base définie sur html */
+}
+
+h2 {/* h2 est un sous-titre (niveau 2) utilisé pour structurer le contenu sous le h1.*/
+	font-size: 2rem;
+}
+
+h1, h2 {
+	color: #080808;
+	text-shadow: 0px 0px 3px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.contentWXY{
+	background-color: #f1ebee;
+}
+    
+h3{/* h3 est un sous-sous-titre (niveau 3), utilisé pour structurer les sections internes d’un h2.*/
+	text-align: center;
+	font-size: 4.5rem;
+	color: #080808;
+	text-shadow: 0px 0px 3px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h4{
+	font-size: 2rem;
+	color: #080808;
+    text-shadow: 0px 0px 3px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+b{
+	font-size: 1rem;
+}
+
+h5 {
+  color: #f1ebee;
+  font-size: 3rem;
+  font-weight: 600;/* détermine l'épaisseur des textes, similaire au LaTeX \textbf etc. */
+  font-family:'Times New Roman', Times, serif;
+  text-shadow:	2px 2px 0px  #957dad,
+               			4px 4px 0px #553c9a;
+}
+
+
+
+.entete {
+	text-align: center;/* Centre le contenu de l'en-tête, comme \centering en LaTeX */
+}
+
+#aboutme {
+	margin: 15px;
+	border-color: rgb(17, 18, 18);
+	background-color: rgb(141, 46, 95);
+	padding: 4rem;
+	position: relative;
+	border: 3px solid black;
+}
+b,tbody,table,{
+	text-align: center;
+}
+
+b,tbody,th,tr,td,li{
+    color: #f1ebee;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    text-align: center;
+}
+
+table, th, td { /* pour la bordure simple autour du tableau */
+  border: 1px solid;
+}
+
+td, th {/*Styles pour les cellules de tableau
+	padding: espace intérieur (1px haut/bas, 8px gauche/droite) */
+	padding: 1px 8px;
+}
+
+#logo {
+	text-align: left;/* alignement à gauche */
+}
+
+.fade { /* commenter et personnaliser */
+	background-color: DarkKhaki;
+	color: Black;
+	transition: background-color 1s;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.fade:hover { /* commenter et personnaliser*/
+	background-color: rgb(198 213 74);
+}
+
+/*
+  Styles pour les étiquettes (labels)
+  - small-caps: utilise des petites capitales
+  - border-radius: arrondi les coins avec une forme complexe (50% 20% / 10% 40%)
+*/
+/* pour chacun des élements suivants, indiquez quelle partie de la page web est définie par ces propriétés de style. Ensuite, modifiez-les à votre goût  */
+.mylabel {
+	background-color: #a070a1;/* Définit la couleur de fond de l’élément. Ici, un violet moyen. */
+	font-family: arial,helvetica,sans-serif;/* Définit les polices utilisées pour le texte. Arial en priorité, sinon Helvetica, puis toute police sans-serif. */
+	font-variant: small-caps;/* Affiche le texte en petites majuscules. */
+	font-size: 90%;/* Réduit légèrement la taille de la police par rapport à la taille normale (90%). */
+	padding: 2px;/* Ajoute un espacement intérieur de 2 pixels autour du contenu. */
+	border-right: 1px solid #724060;/* Ajoute une bordure droite fine de couleur prune foncée. */
+	border-bottom: 1px solid #724060;/* Ajoute une bordure inférieure identique à la bordure droite. */
+	border-radius: 50% 20% / 10% 40%;/* Donne des coins arrondis de forme ovale originale (rayon horizontal et vertical différent). */
+}
+/*
+  Conteneur principal
+  - width: 80% avec margin-left: 10% pour centrage
+  - min-height: 100% assure qu'il occupe au moins toute la hauteur
+*/
+
+#container {
+	background-color: #8b1952;
+	border: 5px solid black;
+	padding: 2px;
+	padding-bottom: 5%;
+	width: 100%;
+	margin-left:0%;
+	height: 40%;
+	min-height: 100%;
+	position: relative;
+}
+/*
+  Wrapper pour la zone de contenu
+  - width: fixe en pixels (600px)
+  - box-shadow: ajoute une ombre portée
+*/
+#page-wrapper {
+	width: 600px;
+	background: #c0377b;
+	padding: 1em;
+	margin: 1em auto;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+/*
+  Disposition globale avec mise en page en tableau
+  display: table permet une mise en page flexible
+*/
+#Global {
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	border: 3px;
+	display:table;
+}
+/*
+  Zone d'affichage du fichier
+  - float: left la fait flotter à gauche
+  - overflow: scroll ajoute des barres de défilement si nécessaire
+*/
+#Global #fileDisplayArea {
+	float:left;
+	width:48%;
+	font-size:0.6em;
+	height:200px;
+	overflow:scroll;
+}
+
+/*
+  Zone d'analyse
+  - margin-left: 52% pour éviter le chevauchement avec la zone de fichier
+*/
+#Global #page-analysis {
+	margin-left:52%;
+	background: #daa8cf;
+	height:200px;
+	overflow:scroll;
+}
+/*
+  Conteneur du graphique
+  padding-top: 5% ajoute un espace au-dessus
+*/
+#chartContainer {
+	padding-top: 5%;
+}
+/*
+  Style spécifique pour le logger3 (couleur rouge)
+*/
+#logger3{
+	color:red;
+}
+
+
+
+/* indiquez ce qui est défini par les propriétés suivantes (special)et modifiez-les à votre goût */
+
+.special{
+  position: relative; /* L'élément est positionné relativement à son emplacement normal — essentiel pour positionner les pseudo-éléments (::before et ::after) en absolu à l’intérieur */
+  padding: 0.9em 0.9em;/* Ajoute un espacement intérieur autour du contenu (haut/bas et gauche/droite) */
+  border: none;/* Supprime toute bordure autour du bouton */
+  background-color:transparent; /* Le fond est transparent — utile pour effets visuels par-dessus une autre couleur/fond */
+  cursor: pointer;  /* Affiche un curseur de type "main" au survol, indiquant que c'est cliquable */
+  outline: none; /* Supprime le contour de focus automatique (souvent une bordure bleue) */
+  font-size: 12px; /* Définit une petite taille de texte */
+  margin: 2em 0.4em; /* Ajoute de l’espace à l’extérieur de l’élément : 2em en haut/bas, 0.4em à gauche/droite */
+  font-family: "Lucida Console", "Courier New", monospace; /* Utilise une police à chasse fixe de style machine à écrire */
+}
+
+.special::after,
+.special::before{
+	content: '';  /* Crée un élément vide (indispensable pour que le pseudo-élément existe) */
+	position: absolute;  /* Permet de positionner librement le pseudo-élément à l’intérieur de .special */
+	display:block;  /* Le pseudo-élément est un bloc, donc il peut avoir une largeur/hauteur */
+	width: 60%;  /* Largeur initiale à 60% de l’élément parent */
+	height: 40%;  /* Hauteur initiale à 40% */
+	border: 5px solid;  /* Ajoute une bordure de 5px sur tous les côtés (sera modifiée ensuite) */
+   	transition: all 0.5s ease;  /* Transition douce de 0.5 seconde pour tout changement de style */
+   	border-radius: 6px; /* Coins légèrement arrondis */
+}
+.special::after{
+	bottom: 0; /* Positionné en bas de l’élément parent */
+	right: 0; /* Positionné à droite */
+	border-top-color: transparent; /* Pas de couleur sur le bord du haut */
+	border-left-color: transparent; /* Pas de couleur sur le bord gauche */
+	border-bottom-color: #0f4137; /* Bord bas coloré en vert foncé */
+	border-right-color: #0f4137;  /* Bord droit aussi */
+     }
+     
+.special::before{
+	top: 0;  /* Positionné en haut de l’élément parent */
+	left: 0;  /* Positionné à gauche */
+	border-bottom-color: transparent;  /* Pas de couleur sur le bord bas */
+	border-right-color: transparent;  /* Pas de couleur sur le bord droit */
+	border-top-color: #12776f;   /* Bord haut coloré turquoise foncé */
+	border-left-color: #12776f;  /* Bord gauche aussi */
+}
+
+.special:hover:after,/* Lors du survol du bouton, les bordures deviennent complètes */
+.special:hover:before{
+	width: 100%;  /* Les coins deviennent des cadres entiers */
+	height: 100%;  /* Occupe toute la taille du bouton */
+}
+
+
+/* indiquez ce qui est défini par les propriétés suivantes (special)et modifiez-les à votre goût */
+
+.rainbowBtn {
+	display: block;  /* L’élément est affiché comme un bloc, prenant toute la largeur disponible */
+	margin : auto; /* Centre horizontalement l’élément dans son conteneur */
+	 width: 200px; /* Définit une largeur fixe de 200 pixels */
+	 height: 60px; /* Définit une hauteur fixe de 60 pixels */
+	 text-align: center;  /* Aligne le texte horizontalement au centre */
+	 line-height: 60px; /* Aligne verticalement le texte en le centrant dans la hauteur de 60px (grâce à la même valeur) */
+	 color: #fff; /* Définit la couleur du texte en blanc */
+	 font-size: 15px; /* Taille de la police fixée à 15 pixels */
+	 text-decoration: none; /* Supprime tout soulignement du texte (utile pour les liens) */
+	 font-family: "Lucida Console", "Courier New", monospace; /* Police à chasse fixe de style machine à écrire */
+	 box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions totales de l’élément */
+	 background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);  /* Applique un dégradé linéaire horizontal allant du bleu clair au rose, au jaune, puis de nouveau au bleu */
+	 background-size: 400%; /* Augmente la taille du fond pour permettre un effet de déplacement (animation) */
+	 border-radius: 30px; /* Arrondit les coins de l’élément (aspect de "pilule") */
+	 z-index: 1;  /* Positionne l’élément au-dessus des autres si chevauchement (utile si d'autres éléments ont un z-index inférieur) */
+}
+
+.rainbowBtn:hover {
+ animation: animate 8s linear infinite;
+}
+@keyframes animate {
+ 0% {
+  background-position: 0%;
+ }
+ 100% {
+  background-position: 400%;
+ }
+}
+
+
+
+
+
+
+  
